@@ -1,0 +1,81 @@
+Created heap of size 10
+Current number of items in heap is: 0
+Heap is empty, can't access top!
+
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+adding item1,  with number 38 to heap
+Top of heap is: text_item{"item1",38}
+adding item2,  with number 25 to heap
+Top of heap is: text_item{"item1",38}
+adding item3,  with number 57 to heap
+Top of heap is: text_item{"item3",57}
+adding item4,  with number 27 to heap
+Top of heap is: text_item{"item3",57}
+adding item5,  with number 63 to heap
+Top of heap is: text_item{"item5",63}
+
+Begin Insert Tests (No Swap Ups Needed)
+adding blue,  with number 2 to heap
+Top of heap is: text_item{"blue",2}
+adding red,  with number 1 to heap
+Top of heap is: text_item{"blue",2}
+
+Begin Insert Tests (Multiple Swap Ups Needed)
+adding red,  with number 1 to heap2
+Top of heap is: text_item{"red",1}
+adding blue,  with number 2 to heap2
+Top of heap is: text_item{"blue",2}
+adding green,  with number 3 to heap2
+Top of heap is: text_item{"green",3}
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+Item returned from heap delete: text_item{"item5",63}
+Top of heap is now: text_item{"item3",57}
+
+Begin DELETEMAX tests (swap_down with left child)
+Item returned from heap delete: text_item{"green",3}
+
+Begin DELETEMAX tests (swap_down with right child)
+Item returned from heap delete: text_item{"ten",10}
+New heap top: text_item{"nine",9}
+
+Begin DELETEMAX tests (empty)
+Error when attempting to delete from empty heap!
+
+BEGINNING TESTS FOR PART 2
+
+BST we are to traverse:
+a:4, alphabetically:2, and:2, at:1, attention:1, because:1, bst:1, calculate:2, careful:1, carefully:1, considered:1, deciding:1, detail:1, difficult:1, each:1, function:1, how:1, if:1, implement:1, index:1, is:3, letter:1, not:2, of:2, one:1, sort:1, taken:1, time:1, to:4, when:3, word:2, words:2, writing:1, 
+
+Found: difficult in the input file 1 time(s).
+Found: to in the input file 4 time(s).
+Found: alphabetically in the input file 2 time(s).
+Found: word in the input file 2 time(s).
+Found: abracadabra in the input file 1 time(s).
+Found: bonjour in the input file 1 time(s).
+Found: comment in the input file 1 time(s).
+word_frequency functionality test (word not found)
+Found: watermelon in the input file 0 time(s).
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+text_item{"a",4}
+text_item{"to",4}
+text_item{"is",3}
+text_item{"when",3}
+text_item{"calculate",2}
+
+*** Top 5 most frequent words with at least 6 letters ***
+text_item{"calculate",2}
+text_item{"alphabetically",2}
+text_item{"considered",1}
+text_item{"letter",1}
+text_item{"carefully",1}
+
+*** Top 5 most frequent words that begin with c ***
+a
+text_item{"calculate",2}
+text_item{"considered",1}
+text_item{"carefully",1}
